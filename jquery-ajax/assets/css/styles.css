@@ -1,0 +1,76 @@
+
+.content_div h2{
+    background-color: rgb(197, 55, 30);
+    width: 96%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: "titular";
+}
+.content-parrafo{
+    width: 98%;
+    margin: auto;
+}
+.parrafo{
+    text-align: center;
+    background-color: rgba(182, 97, 97, 0.541);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+.content-span{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 98%;
+    margin:auto;
+}
+.create-span{
+    font-size: 20px;
+    background-color: tomato;
+    color: thistle;
+    padding: 20px;
+    margin: 10px;
+}
+#gallery{
+    font-family: "Escrito";
+    background-color: rgb(185, 182, 182);
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    margin:  auto  ;
+    text-align: center;
+    font-size: 15px;
+}
+ .items-g {
+    display: block;
+    margin: 50px 36.5px;
+    background-color: rgb(240, 236, 236);
+    padding: 20px;
+    box-shadow: 6px 10px 15px rgba(10, 10, 10, 0.39);
+    overflow: hidden;
+}
+#gallery img{
+    width: 230px;
+    height: 270px;
+}
+/* btn */
+.content-btn{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.content-btn button{
+    background-color: rgb(251, 180, 46);
+    padding: 8px 14px;
+    color:#fff;
+    font-size: 20px;
+    border: 2px solid rgb(241, 204, 204);
+    font-family: "parrafos";
+    font-weight: 800;
+}
+.content-btn button:hover{
+    background-color: rgba(223, 82, 82, 0.479);
+}
