@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "Escrito";
+    src: url(../font/nixie_one/NixieOne.ttf);
+}
+
+@font-face{
+    font-family: "titular";
+    src: url(../font/jmh_typewriter/JMH\ Typewriter-Thin.ttf);
+}
+
+@font-face{
+    font-family: "parrafos";
+    src: url(../font/jmh_typewriter/JMH\ Typewriter-Thin.ttf);
+}
