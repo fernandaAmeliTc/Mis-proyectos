@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://img.freepik.com/vector-gratis/dibujado-mano-lindo-fondo-contorno-mariposa_23-2149021590.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.container{
+    display: grid;
+    /* posicion en columnas */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* el ta maño de separacion de los lados de las columnas */
+    grid-column-gap: 100px;
+    /* los espacios de arriba abajo de las columnas */
+    grid-gap: 20px;
+    /* espacios de heigth de el item */
+    grid-auto-rows: 60px;
+}
+
+.container div{
+    background-color: rgb(214, 107, 191);
+    border: rgb(111, 196, 211) solid 2px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width:900px){
+    body{
+        background-image: url("https://i.pinimg.com/736x/25/d6/15/25d6158191522484e7773cdcd389e350.jpg");
+        
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .container{
+        grid-template-columns: 1fr ;
+    }
+}
+h1{
+    text-align: center;
+}
