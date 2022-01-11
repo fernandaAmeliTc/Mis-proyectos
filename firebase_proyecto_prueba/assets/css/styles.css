@@ -1,0 +1,189 @@
+body {
+    font-family: "Poppins";
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-jardin-flores-azul-purpura-acuarela_65186-2335.jpg?size=626&ext=jpg");
+    background-repeat: 1;
+    background-size:contain;
+}
+/* fuentes personalizadas */
+@font-face{
+    font-family: "f1";
+    src: url(../fonts/calinastiya/Calinastiya\ demo.ttf);
+}
+@font-face{
+    font-family: "f2";
+    src: url(../fonts/darling_3/Darling.ttf);
+}
+
+@font-face{
+    font-family: "f3";
+    src: url(../fonts/rockabilly_2/Rockabilly.ttf);
+}
+
+@font-face{
+    font-family: "f4";
+    src: url(../fonts/miroh/Miroh.ttf);
+}
+.container{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 23%;
+    height: 480px;
+    margin: 60px auto;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 20px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.container H1{
+    font-family: "Poppins";
+    font-size: 35px;
+    color: #6C63FF;
+    padding: 0;
+    margin: 0;
+}
+.container H2{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #868686;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+.container input{
+    font-size: 14px;
+    width: 60%;
+    padding: 8px;
+    margin: 8px auto;
+    border-radius: 20px;
+    border: 1px solid #868686 ;
+}
+.titulo {
+    margin: 14px auto;
+    width: 50%;
+    text-align: center;
+    background-color: #6C63FF;
+    border-radius: 50%;
+}
+.titulo img{
+    width: 84%;
+    height: 100px;
+    margin-top: 20px;
+}
+.btn{
+    width: 40%;
+    background-color: #6C63FF;
+    margin: 10px auto;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.btn:hover{
+    background-color:#6b63ffad ;
+    color:white ;
+
+}
+.btn_inter{
+    display: flex;
+    margin: 0px auto;
+}
+.btn_inter button{
+    background-color: white;
+    border: none;
+    margin: 4px;
+}
+button{
+    background-color: #fff;
+    border: none;
+    font-size: 10px;
+    color: #868686;
+
+}
+/* crear cuenta */
+.content_user{
+    margin: auto;
+    background-color:#6C63FF;
+    border-radius: 50%;
+    padding-top: 20px;
+    width: 50%;
+}
+.content_user img{
+    position: relative;
+    bottom: -25px;
+}
+
+.content_regist{
+    margin:60px auto;
+}
+/* red social */
+
+.container_red_social{
+    width: 60%;
+    margin: -8px auto;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 20px;
+}
+
+.container_red_social h1{
+    color: #6C63FF;
+    font-family: "f2";
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+}
+.content_post{
+    background-image: url("https://media.istockphoto.com/vectors/seamless-colorful-hand-drawn-floral-pattern-with-wild-flowers-simple-vector-id965201584");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 84%;
+    padding: 30px 0px;
+    margin: -10px auto;
+    border: rgb(255, 255, 255) 4px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+}
+textarea{
+    border-radius: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+.post{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.post img{
+    margin: auto;
+    width: 40%;
+}
+.close{
+    margin: auto;
+    text-align: center;
+}
+.close button{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.post_items{
+    margin: 60px;
+    background-color:#6b63ff8e;
+    padding: 30px;
+    border: #fff dashed 3px;
+}
+
+.post_items div{
+    font-family: "Poppins";
+    margin:20px ;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #fff;
+    color: #868686;
+    font-size: 16px;
+}

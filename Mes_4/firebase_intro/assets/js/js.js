@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  $("#registro").hide();
-  $("#content-initial").hide();
+  // $("#registro").hide();
+  // $("#content-initial").hide();
   $("#btn-crear").click(function(){
-  $("#login-container").hide();
+  // $("#login-container").hide();
   $("#registro").show();
   })
 
@@ -71,9 +71,29 @@ $(document).ready(function(){
       $("#login-container").show();
     })
   })
+  // Iniciar con faceboock
+// var providerFaceboock= new FacebookAuthProvider();
+
+  
+//   $("#btn-login-face").click(function(e){
+//     e.preventDefault();const auth = getAuth();
+//     signInWithPopup(auth, providerFaceboock)
+//   .then((result) => {
+//     // The signed-in user info.
+//     const user = result.user;
+
+//     // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+//     const credential = FacebookAuthProvider.credentialFromResult(result);
+//     const accessToken = credential.accessToken;
+
+//     // ...
+//   })
+//     .catch(error =>{
+//       alert(error)
+//     })
+//   })
   // Iniciar sesion con google
   var provider = new firebase.auth.GoogleAuthProvider();
-  provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
   $("#btn-login-google").click(function(e){
     e.preventDefault();
     auth.signInWithPopup(provider).then(result =>{
@@ -86,11 +106,55 @@ $(document).ready(function(){
       if(user){
           //Sesion iniciada
           $("#login-container").hide();
+
       }
       else{
-          //Sesion finalizada
-          // $("login-container").show();
+          // Sesion finalizada
+          $("login-container").show();
       }
   })
-})
+  // publicar una publicacion
+  const db =firebase.firestore();
+  $("#btn-publish").click(function(e){
+      e.preventDefault();
+      let posText = $("#textarea").val();
+      let date = new Date();
+      db.collection("posts").add({
+        text: "posText",
+        day: date.getDate(),
+        month: date.getMonth +1 ,
+        year: date.getFullYear(),
+      })
+      .then((docRef) =>{
+        alert("Estado publicado");
+        $("#textarea").val();
+      }).catch((error)=>{
+        alert(error)
+      })
+  })
+  // leer publicaciones
+  function readPosts(){
+    db.collection("posts").get.then((posts)=>{
+      listPosts(post.docs);
+    })
+  }
+  function listPosts(data){
+    var divContent=("#post-feed");
+    divContent.empty();
+    if(data.length > 0){
+      let content ="";
+      data.forEach(document => {
+        let doc = document.data();
+        const divPost = `<div class='cambiar-post'>
+          <p>${doc.post}</p><br>
+          <span>publicado el: ${doc.day}/${doc.month}/${doc.year}</span><hr>
+        </div>`;
+        content += divPost
+      });{
+        divContent.append(content);
+      }
+    }
+  }
 
+
+})

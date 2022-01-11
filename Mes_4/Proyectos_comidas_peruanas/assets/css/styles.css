@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/* tipografias */
+@font-face{
+    font-family: "flores";
+    src: url(../fonts/spiritual_mountain/Spiritual\ Mountain.ttf);
+}
+@font-face{
+    font-family: "ff";
+    src: url(../fonts/muthiara/Muthiara\ demo\ version.otf);
+}
+@font-face{
+    font-family: "indi";
+    src: url(../fonts/cream_2/cream-DEMO.ttf);
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+/* navbar */
+.container-fluid{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    font-family: "Poppins"
+}
+.navbar-brand{
+    font-size: 24px;
+}
+
+/* carrusel */
+.carousel-inner{
+    width: 100%;
+}
+.carousel-item{
+    height: 40vw;
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    border-radius: 10px;
+    padding: 8px 60px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+.carousel-caption h5{
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+    
+}
+.carousel-caption p{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+
+
+}
+
+/* Presentation */
+
+.Presentation{
+    border-radius: 10px;
+    background-color:#066affd2;
+    text-align: center;
+    width: 70%;
+    margin:80px auto;
+    padding:10px 30px;
+    color: white;
+    border: rgba(255, 255, 255, 0.808) 2px dotted;
+}
+.Presentation:hover{
+    background-color:#be2d4d;
+    color: white;
+    border: rgba(255, 255, 255, 0.808) 2px dotted;
+}
+.Presentation h2{
+    font-family: "ff";
+    font-size: 26px;
+    letter-spacing: 4px;
+}
+.Presentation p{
+    width: 80%;
+    margin: auto;
+    font-family: "indi";
+    font-size: 15px;
+}
+.Presentation a {
+    font-family: "indi";
+    padding: 15px;
+    display: block;
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 900;
+    
+}
+.Presentation img{
+    border-radius: 50%;
+    width: 220px;
+    height: 190px;
+}
+.Presentation h2{
+    padding: 15px;
+}
+.two{
+    background-color: rgb(40, 192, 65);
+}
+.two:hover{
+    background-color: rgb(174, 75, 199);
+}
+/* caards */
+.content-cards{
+    justify-content:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content-cards .card{
+    justify-content: center;
+    margin:30px auto;
+}
+.card-body h5{
+    text-align: center;
+    font-family: "flores";
+    letter-spacing: 4px;
+}
+.card-body a{
+    font-family: "indi";
+}
+.btn-primary{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    background: rgb(216, 27, 128);
+    border: none;
+}
+/* footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 90px;
+    color: white;text-align: center;
+}
+
+footer ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+footer li {
+    padding: 4px 20px;
+}
+@media  screen and (max-width:900px) {
+    
+    .content-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* carrusel */
+    .carousel-item{
+        height: 55vw;
+    }
+    .carousel-caption{
+        border-radius: 10px;
+        padding: 8px 15px;
+    }
+    .carousel-caption h5{
+        font-weight: 800;
+        font-size: 14px;
+    }
+    .carousel-caption p{
+        font-weight: 600;
+        font-size: 12px;
+    
+    }
+}
+
+
+@media  screen and (max-width:600px) {
+    .Presentation{
+        width: 80%;
+        padding: 5px;
+    }
+    .Presentation h2{
+        font-size: 24px;
+    }
+    .Presentation p{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .Presentation img{
+        width: 160px;
+        height: 140px;
+        padding-top: 20px;
+    }
+    
+}
+
+@media  screen and (max-width:370px) {
+    .Presentation h2{
+        font-size: 20px;
+    }
+    .Presentation p{
+        font-size: 10px;
+    }
+}
