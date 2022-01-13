@@ -238,16 +238,95 @@ $("#btn-login-facebook").click(function (e) {
             data.forEach(document => {
                 let doc = document.data();
                 const divPost = `
-                    <div style='border:solid 2px;'>
-                        <p>${doc.post}</p><br>
-                        <span>Publicado el: ${doc.day}/${doc.month}/${doc.year}/${doc.fecha}<span>
+
+                <div style='border:solid 2px;'>
+                        <p  class="parrafo">${doc.post}</p><br>
+                        
+                        <textarea class="textarea_edit" style='display: none;'></textarea>
+                        <button class="button_edit" data-id="${document.id}" style='display: none;'>Guardar</button>
+                        <br>
+                        <span>Publicado el: ${doc.day}/${doc.month}/${doc.year}/${doc.fecha}</span>
+                        <button data-id="${document.id}" class=" btn-warning btn-edit-post">Editar</button>
+                        <button data-id="${document.id}" class=" btn-danger btn-delete-post">Eliminar</button>
                     </div>
                     <hr>
+
                 `;
                 content += divPost;
             });
             divContent.append(content);
+             //Agregar listener a btn-delete
+            const btnDelete = document.querySelectorAll(".btn-delete-post");
+            btnDelete.forEach(btn=>{
+                btn.addEventListener("click",(e)=>{
+                    const id = e.target.dataset.id;
+                    DeletePost(id);
+                })
+            })
+            const btnEdit = document.querySelectorAll(".btn-edit-post");
+            btnEdit.forEach(btn=>{
+                    btn.addEventListener("click",(e)=>{
+                        const id = e.target.dataset.id;
+                        OpenEdit(id,btn);
+                })
+            })
         }
+    }
+
+    function OpenEdit(id,button){
+        let parent = button.parentNode;
+        let textEdit = $(parent).children().eq(2);
+        let btnEdit = $(parent).children().eq(3);
+        textEdit.show();
+        btnEdit.show();
+        btnEdit.on("click",function(e){
+            SaveUpdate(e,id,textEdit.val())
+        });
+    }
+
+    function DeletePost(id){
+        db.collection("posts").doc(id).delete().then(() => {
+            Swal.fire({
+                title:'Se ha eliminado correctamente',
+                text:'Usted a eleminado un post',
+                background:"#fff",
+                // color de fondo de la ventana[abajo]
+                backdrop:true,
+                timer:8000,
+                // tiempo de ventana [abajo]
+                timerProgressBar: true,
+                allowOutsideClick:false,
+                confirmButtonColor:'#6C63FF',
+            });
+            readPosts();
+        }).catch((error) => {
+            console.error("Detalle del Error: ", error);
+        });
+    }
+
+
+    function SaveUpdate(e,id_post,text_new){
+        e.preventDefault();
+        db.collection("posts").doc(id_post).update({
+            post: text_new,
+        }).then(()=>{
+            Swal.fire({
+                title:'Post actualizado',
+                text:'Usted a modificado un post',
+                background:"#fff",
+                // color de fondo de la ventana[abajo]
+                backdrop:true,
+                timer:8000,
+                // tiempo de ventana [abajo]
+                timerProgressBar: true,
+                allowOutsideClick:false,
+                confirmButtonColor:'#6C63FF',
+            });
+            readPosts();
+        })
+        .catch((error)=>{
+            alert("Error:",error);
+        })
     }
 
 })

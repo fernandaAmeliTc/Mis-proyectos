@@ -1,8 +1,6 @@
 body {
     font-family: "Poppins";
-    background-image: url("https://img.freepik.com/vector-gratis/fondo-jardin-flores-azul-purpura-acuarela_65186-2335.jpg?size=626&ext=jpg");
-    background-repeat: 1;
-    background-size:contain;
+    background-image: url("https://media.istockphoto.com/vectors/vector-floral-set-flowers-vector-id858123544");
 }
 /* fuentes personalizadas */
 @font-face{
@@ -26,9 +24,9 @@ body {
 .container{
     text-align: center;
     background-color: rgb(255, 255, 255);
-    width: 23%;
-    height: 480px;
-    margin: 60px auto;
+    width: 26%;
+    height: 520px;
+    margin: 40px auto;
     border-radius: 30px;
     padding: 10px;
     display: flex;
@@ -38,9 +36,9 @@ body {
 .container H1{
     font-family: "Poppins";
     font-size: 35px;
-    color: #6C63FF;
+    color: #000000;
     padding: 0;
-    margin: 0;
+    margin: 0px;
 }
 .container H2{
     font-family: "Poppins";
@@ -59,16 +57,18 @@ body {
     border: 1px solid #868686 ;
 }
 .titulo {
-    margin: 14px auto;
+    overflow: hidden;
+    margin: 30px auto;
     width: 50%;
+    height: 170px;
     text-align: center;
-    background-color: #6C63FF;
+    background-color:#ada0eb;
     border-radius: 50%;
 }
-.titulo img{
+.titulo img{position: relative;
+    top: 30px;
     width: 84%;
-    height: 100px;
-    margin-top: 20px;
+    height: 140px;
 }
 .btn{
     width: 40%;
@@ -119,9 +119,10 @@ button{
 /* red social */
 
 .container_red_social{
-    width: 60%;
+    box-shadow: 2px 20px 28px 20px rgba(0, 0, 0, 0.2);
+    width: 65%;
     margin: -8px auto;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(255, 255, 255, 0.918);
     padding: 20px;
 }
 
@@ -134,23 +135,24 @@ button{
     font-size: 60px;
 }
 .content_post{
-    background-image: url("https://media.istockphoto.com/vectors/seamless-colorful-hand-drawn-floral-pattern-with-wild-flowers-simple-vector-id965201584");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 84%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeX5hPSDoZqk9V4jW9nCHLvfyVWuckDXOLPw&usqp=CAU");
+    width: 88%;
     padding: 30px 0px;
     margin: -10px auto;
     border: rgb(255, 255, 255) 4px solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 textarea{
     border-radius: 30px;
     margin-left: 40px;
-    padding: 10px;
-    font-size: 15px;
+    padding: 20px;
+    font-size: 16px;
     font-family: "Poppins";
+    color: rgb(97, 155, 202);
+    
+    
 }
 .post{
     
@@ -159,8 +161,13 @@ textarea{
 }
 
 .post img{
+
+    background-color: rgba(255, 255, 255, 0.952);
+    padding: 15px 15px;
     margin: auto;
-    width: 40%;
+    width: 46%;
+    border-radius: 80px;
+    border: #6C63FF 1px solid;
 }
 .close{
     margin: auto;
@@ -172,12 +179,11 @@ textarea{
     font-weight: bold;
 }
 .post_items{
+    background-color: #f4586daf;
     margin: 60px;
-    background-color:#6b63ff8e;
     padding: 30px;
-    border: #fff dashed 3px;
+    border-radius: 25px;
 }
-
 .post_items div{
     font-family: "Poppins";
     margin:20px ;
@@ -186,4 +192,38 @@ textarea{
     background-color: #fff;
     color: #868686;
     font-size: 16px;
+}
+.btn-warning{
+    background-color: rgb(119, 109, 247);
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 6px;
+
+}
+.btn-danger{
+    background-color: #f5527d;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 6px;
+
+}
+.textarea_edit{
+    width: 80%;
+    display: block;
+    color: rgb(61, 148, 50);
+    border-radius: 10px;
+    margin: 2px auto;
+    text-align: center;
+}
+.button_edit{
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(231, 42, 121);
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+.parrafo{
+    margin: 0;
 }
