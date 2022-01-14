@@ -1,0 +1,111 @@
+/* Rueda de colores https://color.adobe.com/es/create/color-wheel */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/192/71/678/anime-bungou-stray-dogs-osamu-dazai-wallpaper-preview.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.container {
+    background-color: #f6f7e9a8; 
+    box-shadow: 5px 5px 5px #edfdff;
+    height: 600px;
+    /* padding: 30px 0; */
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    width: 45%;
+    margin: auto;
+}
+
+.pregunta_nombre {
+    text-align: center;
+    font-size: 30px; /* Comentar sobre medidas relativas  */
+    position: relative;
+    top: 20px;
+    color: rgb(230, 71, 132);
+    
+    
+}
+
+.pregunta_enunciado , .resultado_obtenido {
+    text-align: justify;
+    height: 150px;
+    padding:0 50px;
+    color: rgb(144, 130, 130);
+    text-align: center;
+}
+
+.pregunta_alternativas {
+    height: 160px;
+    line-height: 20px;
+    
+}
+
+.pregunta_alternativas button {
+    display: block;
+    margin: 5px auto;
+    font-size: 1rem;
+    width: 70%;
+    margin-top:0px;
+    border-radius: 10px;
+    background-color: rgb(230, 71, 132);
+    border: none;color:#fff;
+    padding: 2px;
+}
+
+.pregunta_alternativas button:hover {
+    background-color: rgba(228, 152, 187, 0.781);transition: 0.3s ease; width: 60%;
+}
+
+.avance {
+    vertical-align: bottom;
+    margin-top: 80px;
+}
+
+/* .card {
+    height: 500px;
+} */
+
+#barra-progreso { 
+    background-color: #ffa4d2;
+    color: rgb(243, 42, 226);
+    border-radius: 10px;
+    width: 60%;
+    /* centrado del elemento */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#estilo-excelente {
+    color:rgb(110, 243, 93);
+    font-weight: 600;
+}
+
+#estilo-bueno {
+    color:rgb(18, 161, 149);
+    font-weight: 600;
+}
+
+#estilo-aceptable {
+    color:rgb(18, 80, 161);
+    font-weight: 600;
+}
+
+#estilo-regular {
+    color:rgb(214, 162, 19);
+    font-weight: 600;
+}
+
+#estilo-malo {
+    color:rgb(161, 39, 18);
+    font-weight: 600;
+}
+
+.resultado_obtenido {
+    padding-top: 50px;
+}

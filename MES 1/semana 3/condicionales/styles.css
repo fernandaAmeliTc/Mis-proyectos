@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;500;700;800&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Mono";
+}
+body{
+    background-image: url("https://image.freepik.com/vector-gratis/kawaii-pastel-corta-dibujos-animados-nubes-sol-corazon-estrellas-patron-costuras-fondo-blanco_71374-30.jpg");
+    background-position: center;/* 👉para centrar la img*/
+    background-repeat: no-repeat;/*👉 sirve para que no se repita la img en caso no entre*/
+    background-size: cover;/*👉sirve para que entre en toda el espacio de la cja*/
+    background-attachment: fixed;
+    
+}
+.contenedor{
+    text-align: center;
+    margin:50px auto;
+    width: 600px;
+    height:490px;
+    background-color: #fff;
+    padding: 20px;
+    border: 15px  dashed  #4aaee9c7   ;
+    border-radius: 20px;
+    box-shadow:   30px 28px 100px rgba(106, 202, 246, 0.294);
+}
+
+.contenedor h1{
+    font-family: "Pacifico";
+    font-size: 45px;
+    color: #f14c8b;
+    margin-bottom: 15px;
+}
+.contenedor label{
+    font-family: "Pacifico";
+    font-size:25px;
+    color: #f5408c;
+    margin-right:-20px ;
+}
+.contenedor input{
+    margin: 30px 0;
+    width: 60%;
+    border: 3px solid #4aaee9c7 ;
+    border-radius:10px;
+    padding: 19px;
+    text-align: center;
+}
+
+.contenedor button{
+    color:white;
+    background-color:#ec2d7d;
+    border-radius: 10px;
+    border: 3px solid #f8e329 ;
+    font-weight: 800;
+    display: block;
+    padding: 15px 10px;
+    margin: 10px auto;
+    width: 60%
+}
+.contenedor button:hover{
+    color:#f8e329;
+    background-color:rgba(255, 255, 255, 0.055);
+    border-color: #f8e329 ;
+}

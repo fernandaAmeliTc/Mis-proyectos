@@ -1,0 +1,33 @@
+body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: #632999f3;
+    margin:90px auto ;
+}
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.849);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    height: 550px;
+}
+
+input{
+    margin:30px auto ;
+    display: block;
+    padding: 10px;
+    border:  3px #867d7d solid ;
+}
+.contenedor h1{
+    padding-top: 40px;
+    }
+button{
+    width: 50%;
+    padding:  16px 12px;
+    border:  1px #000 solid ;
+    background-color:#686767;
+    color: azure;
+    font-size: 22px;
+}
+#btn-empezar {
+    margin-top: 20px;
+}

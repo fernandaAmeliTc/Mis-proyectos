@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insertar Producto</title>
+<link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+
+	<form class="form" action="insertar.php" method="post">
+	<h3>Agregar Producto</h3>
+	<div class="contenedor">
+		<label for="codigo" class="for-label">Codigo:</label>
+		<input class="caja" type="number" name="txtcodigo" placeholder="Ingrese codigo">
+		<br>
+		<label for="Producto" class="for-label">Producto:</label>
+		<input class="caja" type="text" name="txtproducto" placeholder="Ingrese producto">
+		<br>
+		<label for="Categoria" class="for-label">Categoria:</label>
+		<input class="caja" type="text" name="txtcategoria" placeholder="Ingrese categoria">
+		<br>
+		<label for="Stock" class="for-label">Stock:</label>
+		<input class="caja" type="number" name="txtstock" placeholder="Ingrese el Stock">
+		<br>
+		<label for="Precio" class="for-label">Precio:</label>
+		<input class="caja"type="number" name="txtprecio" placeholder="Ingrese precio">
+		<br>
+	</div>
+		<br>
+		<input class="boton" type="submit" id="enviar" value="Enviar Datos" >
+		<br>
+		<br> 
+		<a class="boton_a" href="mostrar.php">Regresar a la lista</a>
+
+   </form>
+</body>
+</html>

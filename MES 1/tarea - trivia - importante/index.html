@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="https://img2.freepng.es/20180330/daq/kisspng-cartoon-question-mark-clip-art-question-mark-5abea5173e1680.9794882715224435432543.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;500;700;800&family=Pacifico&display=swap" rel="stylesheet">
+        <title>trivia de el grupo 3</title>
+    </head>
+    <body >
+        
+        <main id="body">
+            
+            <div class="contenedor preg"> <!-- contenedor de el titulo -->
+                    <div class="contenedor__trivia">
+                        <h2 class="titulo__marca">Trivia de Entretenimiento</h2>
+                    </div>
+                <!-- inicio -->
+                <div  >
+
+                        <!-- contenedor de la trivia -->
+                    <div class="contenedor__parrafo"id="inicio">
+                        <h1 class="subtitulo indi">Trivia</h1>
+                        <p class="PREG_INC">¿Que tanto sabes sobre peliculas, series  y Kdramas ? <br>
+                            PONTE A PRUEBA...
+                        </p>
+                            <!-- redireccion -->
+                        <input type="text" id="name" required="" placeholder="Ingrese su nombre" class="input">
+                        <div class="input_inicio">
+                            <button id="button" class="boton" onclick="enviar()"  >Continuar</button>
+                        </div>
+                    </div>
+                </div>
+    <!-- onclick="location.href='opciones.html'" -->
+                    <!-- opciones -->
+                <section class="section_todo"id="opciones">
+                    <div class="contenedor__parrafo" >
+                        <h1 class="subtitulo" id="saludo">Hola usuario <span id="use" class="saludo">Usuario</span>!!! </h1>
+                        <h2 id="categoria">Seleccione la categoria</h2> 
+                        <h2 class="puntos">Por cada respuesta correcta obtendras <span class="pnt">+1 puntos</span> </h2>
+                        <h2 class="puntos">Por cada respuesta incorrecta obtendras <span class="pnt">- 1 puntos</span> </h2>
+                        <div class="botones">
+                            <button class="boton" id="series">  SERIES
+                            </button>
+
+                            <button class="boton" id="peliculas">PELICULAS
+                            </button>
+                            <button class="boton"id="kdramas" >KDRAMAS
+                            </button>
+                        </div>   
+                    </div> 
+                </section>
+                <!-- series 1 -->
+                <section class="section_todo"id="series_1" >
+                    <h1 class="subtitulo">Serie: <span id="name__">YOU</span></h1> 
+                <figure>
+                    <img class="img_p" src="https://i.ytimg.com/vi/USHUeHaGVok/maxresdefault.jpg" alt="you">
+                </figure>
+                
+                <div class="cronometro" id="cronometro"></div>
+
+                <div id="pregunta" class="series">
+                    <!-- aqui la pregunta -->
+                    
+                    <p class="pregunta">¿Qué signo es beck? </p>
+                    <!-- aqui las opciones  -->
+                
+                    <button id="series_1(0)" class="preg_Tri  but series(0) bat" >Escorpio</button>
+                    <button id="series_1(1)" class="preg_Tri but series(1) bat " >Sagitario</button>
+                    <button id="series_1(0.1)" class="preg_Tri but series(0) bat" >Geminis</button>
+                
+                </div>
+                </section>
+                <!-- series 2 -->
+                <section class="section_todo none" id="series_2" >
+                    <h1 class="subtitulo">Series: <span id="name__">La chica nueva</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://kpoplat.com/wp-content/uploads/2020/07/Girl-From-Nowhere-La-chica-Nueva.jpg" alt="nanno">
+                    </figure>
+                    
+                    <div class="cronometro" id="cronometro"></div>
+        
+                    <div id="pregunta" class="series">
+                        <!-- aqui la pregunta -->
+                        
+                        <p class="pregunta">¿Nanno que presenta?</p>
+                        <!-- aqui las opciones  -->
+                        
+                        <button id="series_2(0)" class="preg_Tri but series(0) bat" >venganza</button>
+                        <button id="series_2(1)" class="preg_Tri but series(1) bat" >karma</button>
+                        <button id="series_2(0.1)" class="preg_Tri but series(0) bat " >Amor</button>
+                    </div>
+                    </section>
+                    <!-- series 3 -->
+                    <section class="section_todo none" id="series_3" >
+                    <h1 class="subtitulo">Series: <span id="name__">Detras de sus ojos</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://www.lascosasquenoshacenfelices.com/wp-content/uploads/2021/02/detras-de-sus-ojos-768x432.jpg" alt="Detras de sus ojos">
+                    </figure>
+                    
+                    <div class="cronometro" id="cronometro"></div>
+        
+                    <div id="pregunta" class="series">
+                        <!-- aqui la pregunta -->
+                        
+                        <p class="pregunta">¿Rob con quien cambia de cuerpo primero?</p>
+                        <!-- aqui las opciones  --> 
+                        <button id="series_3(0)" class="preg_Tri but series(0) bat" >Louis</button>
+                        <button id="series_3(1)" class="preg_Tri but series(1) bat" >Adele</button>
+                        <button id="series_3(0.1)" class="preg_Tri but series(0) bat" >Josue</button>
+                    </div>
+                    </section>
+                    <!-- series 4 -->
+                    <section class="section_todo none" id="series_4" >
+                    <h1 class="subtitulo">Series: <span id="name__">El juego del calamar</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://www.diariodecultura.com.ar/wp-content/uploads/2021/09/WQE-4.png">
+                    </figure>
+                    
+                    <div class="cronometro" id="cronometro"></div>
+        
+                    <div id="pregunta" class="series">
+                        <!-- aqui la pregunta -->
+                        
+                        <p class="pregunta">¿Qué jugador quedo con vida?</p>
+                        <!-- aqui las opciones  --> 
+                        <button id="series_4(1)" class="preg_Tri but series(1) bat"  >456</button>
+                        <button id="series_4(0)" class="preg_Tri but series(0) bat " >556</button>
+                        <button id="series_4(0.1)" class="preg_Tri but series(0) bat" >286</button>
+                        
+                    </div>
+                    </section>
+
+                <!-- peliculas 1 -->
+
+                <section class="section_todo"id="peliculas_1" >
+                    <h1 class="subtitulo">Peliculas: <span id="name__">Venom</span></h1>
+                <figure>
+                    <img class="img_p" src="https://www.informador.mx/__export/1539011646163/sites/elinformador/img/2018/10/08/venom_crop1539011584728.jpg_1970638775.jpg">
+                </figure>
+                <!-- <div class="cronometro" id="cronometro"></div> -->
+
+                <div id="pregunta" class="peliculas">
+                    <!-- aqui la pregunta -->
+                    
+                    <p class="pregunta">¿Eddie brock que profesionalidad ejerce?</p>
+                    <!-- aqui las opciones  --> 
+                    <button id="peliculas_1(0.1)" class="preg_Tri but series(0)" >Profesor</button>
+                    <button id="peliculas_1(0)" class="preg_Tri but series(0)" >Musico</button>
+                    <button  id="peliculas_1(1)" class="preg_Tri but series(1)" >Periodista</button>
+                    
+                </div>
+                </section>
+                <!-- peli8culas 2 -->
+                <section class="section_todo "id="peliculas_2" >
+                    <h1 class="subtitulo">Peliculas: <span id="name__">AVENGERS: INVINITY WAR</span></h1>
+            <figure>
+                <img class="img_p" src="https://www.larepublica.ec/wp-content/uploads/2018/03/infinity-war-promo-art.jpg">
+            </figure>
+            
+            <!-- <div class="cronometro" id="cronometro">00:00</div> -->
+
+            <div id="pregunta" class="peliculas">
+                <!-- aqui la pregunta -->
+                
+                <p class="pregunta">¿Doctor strange cuantos futuros alternos vio?</p>
+                <!-- aqui las opciones  --> 
+                <button id="peliculas_2(1)" class="preg_Tri but series(1)"  >14000702</button>
+                <button id="peliculas_2(0)" class="preg_Tri but series(0)"  >14000501</button>
+                <button id="peliculas_2(0.1)" class="preg_Tri but series(0)" >14000605</a></button>
+            </div>
+                </section>
+                <!-- peli8culas 3 -->
+                <section class="section_todo"id="peliculas_3" >
+                    <h1 class="subtitulo">Peliculas: <span id="name__">MEGAMENTE</span></h1>
+            <figure>
+                <img class="img_p" src="https://images6.alphacoders.com/338/338159.jpg">
+            </figure>
+            
+            <!-- <div class="cronometro" id="cronometro">00:00</div> -->
+
+            <div id="pregunta" class="peliculas">
+                <!-- aqui la pregunta -->
+                
+                <p class="pregunta">¿De quien es el cuerpo de megamente, cuando el sale con roxanne ritchi?</p>
+                <!-- aqui las opciones  -->
+        
+                <button id="peliculas_3(0)" class="preg_Tri but series(0)">El padre espacial de titan</a></button>
+                <button id="peliculas_3(1)" class="preg_Tri but series(1)">Bernad</a></button>
+                <button id="peliculas_3(0.1)" class="preg_Tri but series(0)" >Metro man</a></button>
+            </div>
+                </section>
+                <!-- peliculas 4 -->
+                <section class="section_todo keysPeli "id="peliculas_4" >
+                    <h1 class="subtitulo">Peliculas: <span id="name__">NO RESPIRES</span></h1>
+            <figure>
+                <img class="img_p" src="https://www.guiadelocio.com/var/guiadelocio.com/storage/images/a-fondo/10-terrorificas-peliculas-de-invasiones-domesticas/no-respires-2016-de-fede-alvarez/34398006-1-esl-ES/no-respires-2016-de-fede-alvarez.jpg">
+            </figure>
+            
+            
+            <!-- <div class="cronometro" id="cronometro">00:00</div> -->
+
+            <div id="pregunta" class="peliculas">
+                <!-- aqui la pregunta -->
+                
+                <p class="pregunta">¿Cual de los tres ladrones sale con vida de la casa del hombre ciego?</p>
+                <!-- aqui las opciones  -->
+        
+                <button id="peliculas_4(0)" class="preg_Tri but series(0)">Alex</a></button>
+                <button id="peliculas_4(1)" class="preg_Tri but series(1)">Rocky</a></button>
+                <button  id="peliculas_4(0.1)" class="preg_Tri but series(0)" >Money</a></button>
+            </div>
+                </section>
+                
+                
+                
+                <!-- kdrama 1 -->
+                <section class="section_todo none" id="kdramas_1">
+                    <h1 class= "subtitulo">Kdrama: <span id="name__">Boys Over Flowers</span></h1>
+                <figure>
+                    <img class="img_p" src="https://larepublica.pe/resizer/V7EeFAN2teyHN4aDTotOcdG2ssU=/1250x735/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/XZMOET3YD5ERBATYWJYLOX5FEE.jpg">
+                </figure>
+                
+                <div class="cronometro" id="cronometro"></div>
+
+                <div id="pregunta" class="kdramas">
+                    <!-- aqui la pregunta -->
+                    
+                    <p class="pregunta">¿Quien es la protagonista?</p>
+                    <!-- aqui las opciones  -->
+                    <button id="kdramas_1(1)" class="preg_Tri but series(1) bat">Jan Di</button>
+                    <button id="kdramas_1(0)" class="preg_Tri but series(0) bat">Kamilla</button>
+                    <button id="kdramas_1(0.1)" class="preg_Tri but series(0)">Lisa</button>
+                </div>
+                </section>
+                <!-- kdrama2 -->
+                <section class="section_todo none" id="kdramas_2">
+                    <h1 class="subtitulo">Kdrama: <span id="name__">EL Hada de las Pesas</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://2.bp.blogspot.com/-LiQEsHMq9F0/XEJhVJI7SKI/AAAAAAAAJlQ/b7nOcQrnENI8lUd4YinFkPLQVlyYcs-dQCLcBGAs/s1600/el%2Bhada%2Bde%2Blas%2Bpesas%2Bsinopsis.jpg">
+                    </figure> 
+                    <div class="cronometro" id="cronometro"></div>
+                    <div id="pregunta" class="kdramas">
+                <!-- aqui la pregunta -->
+                <p class="pregunta">¿De que origen es el dorama?</p>
+                <!-- aqui las opciones  -->
+                <button id="kdramas_2(1)" class="preg_Tri but series(1) bat" >Korea del Sur</button>
+                <button id="kdramas_2(0)" class="preg_Tri but series(0) bat" >Japon</button>   
+                <button id="kdramas_2(0.1)" class="preg_Tri but series(0) bat" >China</button>
+            </div>
+                </section> 
+                <!-- kdrama 3 -->
+                <section class="section_todo none" id="kdramas_3">
+                    <h1 class="subtitulo">Kdrama: <span id="name__">Escalera Al Cielo</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://majitosoto.files.wordpress.com/2010/05/esc.jpg">
+                    </figure>
+                    <div class="cronometro" id="cronometro"></div>
+                    <div id="pregunta" class="kdramas">
+                <!-- aqui la pregunta -->
+                <p class="pregunta">¿Cuantos episodios tiene el dorama?</p>
+                <!-- aqui las opciones  --> 
+                <button id="kdramas_3(0)" class="preg_Tri but series(0) bat" >18 episodios</button>
+                <button id="kdramas_3(0.1)" class="preg_Tri but series(0) bat" >12 episodios</button>
+                <button id="kdramas_3(1)" class="preg_Tri but series(1) bat" >20 episodios</button>
+            </div>
+                </section>
+                <!-- kdrama 4 -->
+                <section class="section_todo none" id="kdramas_4">
+                    <h1 class="subtitulo">Kdrama: <span id="name__">True beauty</span></h1>
+                    <figure>
+                        <img class="img_p" src="https://larepublica.pe/resizer/3C94HV83ZS3Rirj8WUFO8xEiEpo=/1250x735/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/ETHXKUNU7FG5PFDQH7AEMIDTDU.jpg">
+                    </figure>
+                    <!-- <div class="cronometro" id="cronometro">00:00</div> -->
+                    <div id="pregunta" class="kdramas">
+                        <!-- aqui la pregunta -->
+                        <p class="pregunta">¿De que se inspiro la serie?</p>
+                        <!-- aqui las opciones  -->
+                        <button id="kdramas_4(1)" class="preg_Tri but series(1) bat" >webtoon</button>
+                        <button id="kdramas_4(0)" class="preg_Tri but series(0) bat" >Manga - Anime</button>
+                        <button id="kdramas_4(0.1)" class="preg_Tri but series(0) bat" >Manhwa</button>
+                    </div>
+                </section>
+                
+            
+            <section class="section_todo" id="puntajes_todo">
+                <h6 class= "subtitulo" id="finde">Fin de el juego</h6>
+                <p>Si tus puntos son mayores a 3 puntos por seccion favorable en caso no sigue intentando hasta que lo consigas</p>
+                <p>Recuerda que la trivia el sistema de puntos cuenta todas las opciones!!!</p>
+                <h5 id="score">Tus Puntos son:</h5>  
+                <h3 id="punt_10">0</h3>
+                <h4 id="btnh4"></h4>
+                <div class="botones">
+                    <button class="boton" id="inicio_1">Inicio 
+                    </button>
+
+                    <button class="boton" id="opciones_1">Opciones 
+                    </button>
+                </div> 
+            </section>
+            
+            
+            
+            
+            
+            
+            </div>  
+            <section class="cont_punt" id="cont_punt">
+                <h2 class="subtitulo">Puntos:</h2>
+                <p>Estos son tus puntos</p>
+                <h3 id="punt">0</h3>
+            </section>
+        </main>
+        <section class="btn_sh_hd">
+            <button id="btnShow">Mostrar </button>
+            <button id="btnHide">Ocultar</button>
+        </section>
+        <!-- contador de puntos -->
+        
+        
+        <script src="js/inicio.js"></script>
+        <script src="js/kdramas.js"></script>
+        <script src="js/peliculas.js"></script>
+        <script src="js/series.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
+
+<!--  --> 

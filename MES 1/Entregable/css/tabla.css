@@ -1,0 +1,53 @@
+h1{
+    width: 100%;
+    color: red;
+    font: oblique bold 120% cursive;
+    font-size: 50px;
+    text-align:  center;
+
+}
+body{
+    background-color:rgba(134, 195, 245, 0.541);
+    margin: 0;
+    padding: 0;
+    background: url(img.jpg);   
+    background-size: cover;
+    background-position: center;
+}
+#main-tabla{
+    margin: 10px auto;
+    width: 600px;
+    
+}
+#main-tabla th{
+    font: oblique bold 120% cursive;
+}
+#main-tabla td{
+    font: oblique bold 95% cursive;
+
+}
+
+#main-tabla a{
+    font: oblique bold 120% cursive;
+
+}
+
+
+table{
+  
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 20px;
+}
+
+thead{
+    background-color: rgba(0, 72, 255, 0.967);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgba(59, 109, 235, 0.665);
+}

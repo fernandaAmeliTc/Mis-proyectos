@@ -1,0 +1,33 @@
+body{
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  linear-gradient(#444cf7 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(to right, #444cf7 1.4000000000000001px, #e5e5f7 1.4000000000000001px);
+    background-size: 28px 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+h2{
+    
+    font-family: "Hachi Maru Pop";
+    color: #08d490d3;
+    font-size: "20px";
+}
+h1{
+    color: #0867d4d3;
+    font-size: "50px";
+    
+}
+
+.caja_de_img {
+    display: flex;
+    justify-content: center;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    list-style: none;
+    
+}

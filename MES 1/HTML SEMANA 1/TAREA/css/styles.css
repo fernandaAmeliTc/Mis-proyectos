@@ -1,0 +1,102 @@
+body{
+    background-color: #e5e5f7;
+    background-image: linear-gradient(to right, rgba(250, 0, 129, 0.253), #fa00815b 5px, #e5e5f7 5px, #e5e5f7 );
+    background-size: 10px 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Varela Round";
+}
+.perfil{
+    
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: #030303;
+    display: flex;
+	justify-content: space-between;
+	overflow: hidden ;}
+
+.menu a {
+        display: flex;
+        color: #fff;
+        text-decoration:none;
+        border: 1px solid #fff;
+        font-size:20px;
+        padding:10px 15px ;
+
+
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+figure{
+    display: flex;
+    justify-content: center;
+}
+figure img{
+    width: 400px;
+    height: 300px;
+}
+
+.cont figure img{
+    width: 500px;
+    height: 600px;
+}
+
+section{
+    width: 85vw;
+    margin:  0 auto ;
+}
+h2{
+    color: #7c4b4b;
+    font-size: 40px;
+}
+th{
+    border: 6px rgb(223, 9, 116) solid;
+    background:rgba(224, 62, 183, 0.602) ;
+    color: #fdf6f6;
+    padding: 5px;
+}
+td{
+    text-align: center;
+    border: 5px #dfd7d7 solid;
+    background: rgb(177, 155, 155);
+    color: #f5f5f5;
+    padding: 5px;
+
+    
+}
+.table{
+    display:flex ;
+    justify-content: center;
+
+}
+footer{
+    width: 100vw;background-color: rgba(26, 26, 26, 0.835);
+    color: #adadad;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+form h3{
+    font-size: 40px;
+    color: #ffffff;
+    
+}
+button{
+    color: white;
+    font-weight: 600;
+    font-size:15px ;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    border: 3PX white solid;
+}

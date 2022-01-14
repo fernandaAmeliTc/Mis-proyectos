@@ -1,0 +1,218 @@
+/* fobt pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;500;700;800&family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+
+body {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #b9518a 25%, transparent 25%, transparent 75%, #b9518a 75%, #b9518a), repeating-linear-gradient(45deg, #b9518a 25%, #e5e5f7 25%, #e5e5f7 75%, #b9518a 75%, #b9518a);
+    background-position: 0 0, 26px 26px;
+    background-size: 52px 52px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenedor__trivia{
+    border-radius: 25px 25px 0 0;
+    background-color: black;
+    color: #fbfbfb;
+}
+.pnt{
+    color: #0b9fb3;
+    padding: 0 5px
+}
+.titulo__marca {
+    font-size: 10px;
+}
+
+.subtitulo {
+    color:#fe1e74;
+    margin-top: 3px;
+    font-family: "pacifico";
+    font-size: 30px;
+}
+.indi{
+    margin-top: 60px;
+}
+
+span{
+    font-size: 25PX;
+    font-weight: 600;
+    color: #131313;
+}
+.contenedor {
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow:  0 8px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    height: 480px;
+    width: 50%;
+}
+.final{
+    height:480px ;
+    bottom: 60px;
+}
+.opcion{
+    margin: 60px auto;
+    height:460px ;
+}
+/* ssssssssssssssssssssssssssssssssssssssssssssss */
+.img_p{
+    border: #000000 5px solid;
+    width:530px ;
+    height:230px;
+    
+}
+.preg {
+    margin-top:25px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow:  0 8px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    height: 550px;
+    width: 60%;
+
+}
+.contenedor__parrafo {
+    padding: 50px 10px 0;
+}
+/* input */
+.input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin: 20px 0;
+    width: 70%;
+}
+
+input {
+    font-size: 16px
+}
+/* boton  */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.boton {
+    color:white;
+    background-color: #080808;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 800;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 40%
+}
+
+
+.boton:hover{
+    background-color:#fe1e74;
+    color: white;
+    border: 1px  white solid
+}
+
+
+.pregunta {
+    display:block;
+    font-weight: 400;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.puntos {
+    font-size:18px;
+    margin: 10px 0;
+}
+.imgDeco {
+    width:220px;
+    padding: 45px 0;
+}
+
+.puntajeTitulo {
+    padding: 20px 0;
+    color:  #fe1e74;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.puntajes {
+    color: #e67697;
+    padding: 15px 0;
+    font-family: "Gluten";
+    font-size: 40px;
+    font-weight: bold;
+}
+.over{
+    font-weight: 500;
+    color: #000000;
+}
+
+.botonVolver:hover{
+    background-color:#fe1e74;
+    color: white;
+    border: 1px solid white
+}
+
+
+
+
+
+.botonVolver {
+    background-color:black ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 800;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 40%
+}
+
+
+.pregunta {
+    font-weight: 600;
+}
+.peliculas,.series,.kdramas{
+    display: flex;
+    flex-direction: column;
+    margin:8px 100px;
+    
+}
+.peliculas button,.series button,.kdramas button{
+    margin: 10px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+.preg_Tri:hover {
+    background-color:#fe1e74;
+    color: white;
+    border: 2px solid black
+}
+.boton_cont{
+    padding: 10px 10px;
+    color: white;
+    background-color: black;
+    margin-top: -0px;
+    border-radius: 10px;
+}
+.boton_cont:hover {
+    background-color:#fe1e74;
+    color: white;
+    border: 1px solid white
+}

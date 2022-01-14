@@ -1,0 +1,19 @@
+h1{
+    width: 100%;
+    color: red;
+    font: oblique bold 120% cursive;
+    font-size: 50px;
+    text-align:  center;
+}
+body{
+    font: oblique bold 120% cursive;
+    background: url(gat.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+}
+a{
+font: oblique bold 120% cursive;
+color: red;
+}

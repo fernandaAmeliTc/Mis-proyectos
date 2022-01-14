@@ -1,0 +1,694 @@
+/* fobt pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;500;700;800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;500;700;800&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Patrick+Hand&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+/* https://st2.depositphotos.com/1005549/11549/v/950/depositphotos_115491270-stock-illustration-pattern-with-sweet-macarons.jpg */
+/* https://wallpaper.dog/large/20468941.jpg */
+/* https://p4.wallpaperbetter.com/wallpaper/192/71/678/anime-bungou-stray-dogs-osamu-dazai-wallpaper-preview.jpg */
+/* https://wallpaperaccess.com/full/848.jpg */
+body {
+    background-position: center;/* 👉para centrar la img*/
+    background-repeat: no-repeat;/*👉 sirve para que no se repita la img en caso no entre*/
+    background-size: cover;/*👉sirve para que entre en toda el espacio de la cja*/
+    background-attachment: fixed;
+    background-image: url("https://wallpaperaccess.com/full/4131643.jpg");
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.contenedor__trivia{
+    background-color: #97bad1;
+    color: #fbfbfb;
+    font-family: "poppins";
+    font-size: 28px;
+    padding: 1px;
+}
+.pnt{
+    color: #0b9fb3;
+    padding: 0 5px
+}
+.titulo__marca {
+    font-size: 10px;
+}
+
+.subtitulo {
+    color:#ff0062;
+    margin-top: 3px;
+    font-family: "pacifico";
+    font-size: 30px;
+}
+.indi{
+    margin-top: 60px;
+    font-size: 60px;
+}
+.section_todo{
+    display: none;
+}
+span{
+    font-size: 33PX;
+    font-weight: 600;
+    font-family: "Patrick Hand";
+}
+.contenedor {
+        overflow: hidden;
+    margin: 50px auto;
+    border-radius: 50%;
+    /* border: 3px #cf6666 dotted; */
+    box-shadow:  20px 28px 10px rgb(255, 255, 255);
+    background-color: white;
+    height: 480px;
+    width: 60%;
+}
+.final{
+    height:480px ;
+    bottom: 60px;
+}
+.opcion{
+    margin: 60px auto;
+    height:460px ;
+}
+/* ssssssssssssssssssssssssssssssssssssssssssssss */
+.img_p{
+    width:530px ;
+    height:230px;
+    border-radius: 5%;
+}
+.preg {
+    margin-top:25px;
+    border-radius: 2.5%;
+    border: 0px solid #3c949c00;
+    box-shadow:  10px 15px 100px #ffffffb0;
+    background-color: white;
+    height: 550px;
+    width: 45%;
+
+}
+.PREG_INC{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-family:"Patrick Hand" ;
+    font-weight: 200;
+    padding: 30px;
+}
+.contenedor__parrafo {
+    padding: 0px 10px ;
+}
+/* input */
+.input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin: 20px 0;
+    width: 70%;
+}
+
+input {
+    font-size: 16px;font-family:"Patrick Hand" ;
+    height: 44px;
+}
+/* boton  */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.boton {
+    color:white;
+    background-color:#2f7981;
+    border-radius: 10px;
+    border: 1px solid #2f7981;
+    font-weight: 800;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 40%
+}
+
+.btn_sh_hd button{
+    position: relative;
+    top: -45px;
+    color:white;
+    background-color:#ff2e6d ;
+    border-radius: 10px;
+    border: 1px solid#f6326d ;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+.btn_sh_hd button:hover{
+    background-color:#4b9199ce;
+    color: white;
+    border: 1px  white solid
+}
+
+.boton:hover{
+    background-color:#2f7981ab;
+    color: white;
+    border: 1px  white solid
+}
+
+
+.pregunta {
+    display:block;
+    font-weight: 400;
+    font-family: "Patrick Hand";
+    color: #9fc84b
+
+    ;font-size: 26px;
+    width: 80%;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.puntos {
+    font-size:18px;
+    margin: 10px 0;
+    font-family: "Poppins";
+}
+.imgDeco {
+    width:220px;
+    padding: 45px 0;
+}
+
+.puntajeTitulo {
+    padding: 20px 0;
+    color:  #fe1e74;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.puntajes {
+    color: #e67697;
+    padding: 15px 0;
+    font-family: "Gluten";
+    font-size: 40px;
+    font-weight: bold;
+}
+.over{
+    font-weight: 500;
+    color: #000000;
+}
+
+.botonVolver:hover{
+    background-color:#fe1e74;
+    color: white;
+    border: 1px solid white
+}
+
+
+
+
+
+.botonVolver {
+    background-color:black ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 800;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 40%
+}
+
+
+.pregunta {
+    font-weight: 600;
+}
+.peliculas,.series,.kdramas{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.peliculas button,.series button,.kdramas button{
+    margin: 10px;
+    padding: 2px;
+    background-color:#2f7981b0;
+    border: white 1px solid;
+    border-radius: 8px;
+    width: 70%;
+    font-family: 'Indie Flower';
+    color: white;
+}
+
+
+
+.preg_Tri:hover {
+    background-color:#2f798169
+    ;
+    color: white;
+    border: 2px solid white;
+    width: 61.5%;
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+.correcta{
+    background-color: #51e723;
+    width: 61.5%;
+    transition: all 0.4s;
+
+}
+.incorrecta{
+    background-color: #c83c3c;
+    width: 61.5%;
+    transition: all 0.4s;
+
+}
+.boton_cont{
+    padding: 10px 10px;
+    color: white;
+    background-color: black;
+    margin-top: -0px;
+    border-radius: 10px;
+}
+.boton_cont:hover {
+    background-color:#080205;
+    color: white;
+    border: 1px solid white
+}
+.cont_punt{
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.746);
+    width: 200PX;
+    height: 290PX;
+    border-radius: 40px;
+    border: 1px #1a1818 solid;
+    position: relative;
+    bottom: -120px;
+    padding:5px;
+    cursor: pointer;
+    display: none;
+    font-family: 'Indie Flower';
+    margin-right: 60px;
+}
+.cont_punt p{
+    font-family: 'Indie Flower';
+    font-size: 26px;
+}
+
+.cont_punt #punt{
+    font-size: 60px;
+}
+.cont_punt h2{
+    
+    color: #465c6d;
+    font-weight: 300;
+    font-size: 40px;
+}
+.use , #punt{
+    position: relative;
+    bottom: -5px;
+    color: #1d5580;
+    font-size: 22px;
+}
+#puntajes_todo{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+#puntajes_todo .subtitulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.score{
+    margin-top: 10px;
+    font-weight: 800;
+    color: #3f3f3f;
+    font-size: 30px;
+    font-family: "Pacifico";
+}
+
+#puntajes_todo #punt{
+    font-size: 45px;
+    font-weight: 400;
+}
+#puntajes_todo p{
+    font-size: 25px;
+    font-family: 'Indie Flower';
+    padding: 10px;
+    color: #777373;
+    
+}
+#punt_10{
+    color: #9fc84b;
+    font-size: 70px;
+    margin-top: 20PX;
+}
+#puntajes_todo .botones{
+    margin-top: 20px;
+}
+#saludo, use{
+    margin: 20px 0;
+    font-size: 40px;
+    font-family:"Patrick Hand" ;
+    color:#f60f54;
+}
+#categoria{
+    color: #6e6d6d;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Pacifico";
+}
+.pnt{
+    color: #9fc84b;
+}
+#name__{
+        color: #1a6874dc;
+        font-size: 35px;
+    }
+#finde{
+    font-family: "Patrick Hand";
+    font-size: 70px;
+    color: #f60f54;
+}
+#score{
+    color: #000000;
+    font-weight: 300;
+    font-family: "Patrick Hand";
+    
+    font-size: 25px;
+}
+.usuario_use, #punt{
+    font-size: 30px;
+    color:#9fc84b;
+}
+
+/* -----------responsive ------------------ */
+/* mi pantalla es de 1080 lo voy a adaptar a distintas pantallas */
+@media screen and (max-width:1025px) {
+    .cont_punt{
+        margin-right: 35px;
+    }
+}
+/* 900 pixeles para table*/
+@media screen and (max-width:950px) {
+    .cont_punt{
+        margin-right: 28px;
+    }
+}
+@media screen and (max-width:870px) {
+    .cont_punt{
+        width: 180px;
+        height: 250px;
+        bottom: -150px;
+    }
+}
+@media screen and (max-width:770px) {
+    #opciones .botones{
+        margin-top: 0px;
+    }
+    .PREG_INC{
+        font-size: 22px;;
+    }
+}
+@media screen and (max-width:760px) {
+    .img_p{
+        background-position: center;/* 👉para centrar la img*/
+        background-repeat: no-repeat;/*👉 sirve para que no se repita la img en caso no entre*/
+        background-size: cover;/*👉sirve para que entre en toda el espacio de la cja*/
+        background-attachment: fixed;
+        width: 90%;
+        height: 200px;
+        border: #000 1px solid;
+    }
+    .cont_punt{
+        text-align: center;
+        width: 280px;
+        position: absolute;
+        bottom: -430px;
+        /* left: 255px; */
+        margin-bottom: 0px;
+        width: 80%;
+        left: 10%;
+        
+    }
+    .cont_punt p {
+        font-size: 25px;
+    }
+    .contenedor{
+        display: block;
+    }
+    .contenedor {
+        width: 90%;
+    }
+    #opciones .botones{
+        margin-top: 0px;
+    }
+    .PREG_INC{
+        font-size: 25px;;
+    }
+}
+@media screen and (max-width:400px) {
+    .pregunta{
+        font-size: 23px;
+    }
+    #finde{
+    font-family: "Patrick Hand";
+    font-size: 50px;
+    color: #f60f54;
+}
+    #score{
+    color: #000000;
+    font-weight: 300;
+    font-family: "Patrick Hand";
+    font-size: 20px;
+}
+    #puntajes_todo p{
+    font-size: 20px;
+    font-family: 'Indie Flower';
+    padding: 10px;
+    color: #777373;
+    
+}
+#punt_10{
+    font-size: 30px;
+}
+#name__{
+    color: #1a6874dc;
+    font-size: 20px;
+    display: block;
+}
+}
+/*
+}
+/* para celular */
+@media screen and (max-width:384px) {
+    .boton{
+        font-size: 12px;
+    }
+    #saludo , #use {
+        font-size: 30px;
+    }
+    .contenedor__parrafo{
+        padding-top: 10px;
+    }
+    .img_p{
+        background-position: center;/* 👉para centrar la img*/
+        background-repeat: no-repeat;/*👉 sirve para que no se repita la img en caso no entre*/
+        background-size: cover;/*👉sirve para que entre en toda el espacio de la cja*/
+        background-attachment: fixed;
+        width: 100%;
+        height: 200px;
+        border: #000 1px solid;
+    }
+    .PREG_INC{
+        font-size: 20px;;
+    }
+    .pregunta{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:360px) {
+    .pregunta{
+        font-size: 20px;
+    }
+    .PREG_INC{
+        font-size: 20px;;
+    }
+    .cont_punt{
+        bottom: -0px;
+    }
+    .cont_punt p {
+        font-size: 20px;
+    }
+    #saludo , #use {
+        font-size: 26px;
+    }
+
+}
+@media screen and (max-width:350px) {
+    .PREG_INC{
+        font-size: 20px;
+        width: 100%;
+        padding: 19px;
+    }
+    .cont_punt{
+        bottom: -480px;
+    }
+    .btn_sh_hd{
+        margin-top: 70px;
+    }
+    #button{
+        width: 80%;
+        font-size: 10px;
+    }
+    #saludo , #use {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:338px) {
+    .cont_punt p {
+        font-size: 20px;
+    }
+    #opciones .botones{
+        margin-top: 0px;
+    }
+    .subtitulo{
+        font-size: 27px;
+    }
+    #categoria{
+        font-size: 22px;
+    }
+    .indi{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:315px) {
+    .PREG_INC{
+        font-size: 20px;
+    }
+    .cont_punt{
+        bottom: -520px;
+        height: 290px;
+    }
+    .btn_sh_hd{
+        margin-top: 40px;
+    }
+
+    #button{
+        width: 80%;
+        font-size: 10px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .boton{
+        font-size: 10px;
+        height: 40px;
+        width: 100%;
+    }
+    h2 ,.puntos{
+        font-size: 15px;
+    }
+    .pnt{
+        font-size: 20px;
+        color: #9fc84b;
+    }
+    .img_p{
+        background-position: center;/* 👉para centrar la img*/
+        background-repeat: no-repeat;/*👉 sirve para que no se repita la img en caso no entre*/
+        background-size: cover;/*👉sirve para que entre en toda el espacio de la cja*/
+        background-attachment: fixed;
+        width: 100%;
+        height: 200px;
+        border: #000 1px solid;
+    }
+    .contenedor{
+        height: 530px;
+    }
+    
+    #puntajes_todo #finde{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    #punt_10{
+        margin-top: 0px;
+    }
+    .indi{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width:290px) {
+    .contenedor{
+        height: 610px;
+    }}
+@media screen and (max-width:259px) {
+    .contenedor{
+        height: 620px;
+    }
+    #score{
+        color: #000000;
+        font-weight: 300;
+        font-family: "Patrick Hand";
+        font-size: 20px;
+    }
+        #puntajes_todo p{
+        font-size: 23px;
+        font-family: 'Indie Flower';
+        padding: 5px;
+        color: #777373;
+        
+    }
+    #score{
+        color: #000000;
+        font-weight: 300;
+        font-family: "Patrick Hand";
+        font-size: 15px;
+    }
+        #puntajes_todo p{
+        font-size: 20px;
+        font-family: 'Indie Flower';
+        padding: 15px;
+        color: #777373;
+        
+    }
+}
+@media screen and (max-width:200px) {
+    .contenedor{
+        height: 730px;
+    }
+    #score{
+        color: #000000;
+        font-weight: 300;
+        font-family: "Patrick Hand";
+        font-size: 18px;
+    }
+        #puntajes_todo p{
+        font-size: 20px;
+        font-family: 'Indie Flower';
+        padding: 10px;
+        color: #777373;
+        
+    }
+}
+@media screen and (max-width:186px) {
+    .contenedor{
+        height: 790px;
+    }
+
+}
